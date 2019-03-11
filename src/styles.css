@@ -1,12 +1,12 @@
 body {
     font-family: 'Trebuchet MS', sans-serif;
-    text-align: center;
+    text-align: left;
 }
 
 .container {
-    width: 30%;
+    width: 50%;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 600px;
     height: 96%;
     min-height: 300px;
     padding: 2%;
