@@ -1,13 +1,9 @@
 import React, {Component} from 'react'
 
 class ToDoItem extends Component {
-    constructor(props) {
-        super(props)
-    }
-
-    toggleCheckMark = () => {
-        console.log('changed')
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
 
     render() {
         return (
@@ -15,7 +11,7 @@ class ToDoItem extends Component {
                 <input
                     type='checkbox' 
                     checked={this.props.todo.completed}
-                    onChange={this.toggleCheckMark}
+                    onChange={e => this.props.handleChange(this.props.todo.id)}
                 />
                 <span> {this.props.todo.text}</span><br />
             </div>
