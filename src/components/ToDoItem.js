@@ -6,14 +6,16 @@ class ToDoItem extends Component {
     // }
 
     render() {
+        const checkStatus = this.props.todo.completed
+
         return (
             <div className='listItem'>
                 <input
                     type='checkbox' 
-                    checked={this.props.todo.completed}
+                    checked={checkStatus}
                     onChange={e => this.props.handleChange(this.props.todo.id)}
                 />
-                <span> {this.props.todo.text}</span><br />
+                <span className={checkStatus ? 'done' : null}> {this.props.todo.text}</span><br />
             </div>
         )
 

@@ -22,3 +22,8 @@ body {
     font-size: 20px;
     border-bottom: 1px solid lightgray;
 }
+
+.done {
+    text-decoration: line-through;
+    color: lightgray;
+}
